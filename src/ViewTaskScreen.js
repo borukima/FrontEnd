@@ -44,7 +44,7 @@ const ViewTask = ({ id, name, time }) => {
 const ViewTaskScreen = () => {
   const [data, setData] = useState({});
   const [text, onChange] = useState("1");
-  let url = 'http://10.0.2.2:3000/user-with-task/' + text
+  let url = 'http://192.168.1.11:3000/user-with-task/' + text
   axios.get(url).then(res => {
     setData(res.data)
   })
